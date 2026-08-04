@@ -37,7 +37,7 @@ const fmtKey = (sf) => sf ? "v2" : "v1";
 
 // Set this to your deployed Cloudflare Worker URL to enable MFL/Fleaflicker imports
 // in the browser, e.g. "https://tradedesk-proxy.yourname.workers.dev"
-const PROXY = "";
+const PROXY = "https://tradedesk-proxy.zach-copen.workers.dev";
 const pfetch = (url) => PROXY ? fetch(`${PROXY}?url=${encodeURIComponent(url)}`) : fetch(url);
 
 // ---------------- league math (team-count agnostic) ----------------
